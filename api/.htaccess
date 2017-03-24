@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^/api/index.php$ / [QSA,L]
+RewriteRule ^([a-z0-9]+)/$ index.php?action=$1 [QSA,L]
+RewriteRule ^([a-z0-9]+)/([a-z0-9]+)/$ index.php?action=$1&subaction=$2 [QSA,L]
